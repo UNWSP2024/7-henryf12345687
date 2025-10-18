@@ -11,8 +11,8 @@ def distance(coord1, coord2):
     return math.sqrt((x2 - x1)**2 + (y2 - y1)**2 + (z2 - z1)**2)
 def main():
     try:
-        coord1 = eval((input("Enter the first coordinate (x1, y1, z1): ")))
-        coord2 = eval((input("Enter the second coordinate (x2, y2, z2): ")))
+        coord1 = eval((input("Enter the first coordinate (x1, y1, z1) seperate numbers with a comma: ")))
+        coord2 = eval((input("Enter the second coordinate (x2, y2, z2 seperate numbers with a comma): ")))
         if len(coord1) != 3 or len(coord2) != 3:
             print("Each tuple needs to have three variables")
             return
